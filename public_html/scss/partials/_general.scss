@@ -1,0 +1,23 @@
+/*
+    Created on : Mar 22, 2021, 7:46:27 PM
+    Author     : Nevena
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}
+html{
+    font-size: 10px; // 1rem
+}
+body{
+    font-size: 1.6rem;
+}
+.container{
+    width: 95%;
+        max-width: 1100px;
+        margin: 0 auto
+}
