@@ -4,3 +4,32 @@
     background-color: $bg;
 }
 
+@mixin radius($radius){
+
+    @if($enable-rounded){
+        border-radius: $radius;
+        -webkit-border-radius: $radius;
+        -moz-border-radius: $radius;   
+    }@else{
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;   
+    }
+
+}
+
+//ukoliko su različiti radijusi 
+//top-left, top-right, bottom-left i bottom-right:
+@mixin radiusAll($tl, $tr, $br, $bl){
+    @if($enable-rounded){
+        border-radius: $tl $tr $br $bl;
+        -webkit-border-radius: $tl $tr $br $bl;
+        -moz-border-radius: $tl $tr $br $bl;
+    } @else {
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+    }
+
+
+}
