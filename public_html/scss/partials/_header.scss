@@ -1,12 +1,55 @@
 
 $header-bg: $purple;
 $header-color: $white;
+$menu-link-hover-bg: $white;
+$menu-link-hover-color: $purple;
 
 header{
-    padding: 30px 0;
-    background-color: $header-bg;
-}
+    padding: 30px 0;   //header style
+    background-color: $header-bg;   // header style
 
-header a{
-    color: $header-color;
+    .branding a {    // header .branding a
+                     display: block;
+                     text-align: center;
+                     margin-bottom: 2rem;
+                     color: $header-color;
+    } // branding end
+
+    .main-menu {   // header .main menu
+                   list-style: none;
+                   padding: 0;
+
+                   a{     // header .main-menu a
+                          color: $header-color;
+                          display: block;
+                          text-align: center;
+                          text-decoration: none;
+                          padding: 5px 10px;
+                          text-transform: uppercase; 
+                          transition: linear 0.5s;
+
+                          &:hover, &.active{
+                              color: $menu-link-hover-color;
+                              background-color: $menu-link-hover-bg;
+                          }// hover i aktivno stanje 
+                   } // a end
+
+
+    } // main-menu end
+} // header end
+
+@media(min-width:992px){
+    header{
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .main-menu{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }  // nav end
+    } // header end
 }
