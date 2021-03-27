@@ -5,8 +5,9 @@ $menu-link-hover-bg: $white;
 $menu-link-hover-color: $purple;
 
 header{
-    padding: 30px 0;   //header style
-    background-color: $header-bg;   // header style
+   // padding: 30px 0;   //header style
+   //background-color: $header-bg;   // header style
+   @include sectionStyle($header-bg, 30px);
 
     .branding a {    // header .branding a
                      display: block;

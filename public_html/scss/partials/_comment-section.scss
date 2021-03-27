@@ -1,5 +1,7 @@
+
+$comment-bg: $white;
+
 .comment-section{
-        padding: 30px 0;
-    background-color: #fff;
+ @include sectionStyle($comment-bg, 30px);
 }
 
